@@ -1,24 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tmp.hpp                                            :+:      :+:    :+:   */
+/*   Iter.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aobshatk <aobshatk@42warsaw.pl>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/20 11:51:13 by aobshatk          #+#    #+#             */
-/*   Updated: 2025/10/21 14:27:29 by aobshatk         ###   ########.fr       */
+/*   Created: 2025/10/21 17:34:13 by aobshatk          #+#    #+#             */
+/*   Updated: 2025/10/21 20:47:42 by aobshatk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef TMP_H
-#define TMP_H
+#ifndef ITER_H
+#define ITER_H
 
-#include <iostream>
-#include "temp.tpp"
+#include "Iter.tpp"
 
-template <typename T> T min(T a, T b);
-template <typename T> T max(T a, T b);
-template <typename T> void swap(T &a, T &b);
-
+template <typename T, typename Func> void iter(T *arr, const size_t length, Func func);
 
 #endif
