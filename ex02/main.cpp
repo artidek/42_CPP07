@@ -6,7 +6,7 @@
 /*   By: aobshatk <aobshatk@42warsaw.pl>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 13:24:55 by aobshatk          #+#    #+#             */
-/*   Updated: 2025/10/22 14:35:02 by aobshatk         ###   ########.fr       */
+/*   Updated: 2025/10/22 20:47:23 by aobshatk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,10 @@ int main(void)
     {
         Array<int> tmp = numbers;
         Array<int> test(tmp);
+		tmp[0] = 501;
+		test[0] = 502;
+		std::cout << "new index 0 of tmp " << tmp[0] << " new index 0 of test " << test[0] << std::endl;
+		std::cout << "index 1 of tmp " << tmp[1] << " and test " << test[1] << std::endl;
     }
 
     for (int i = 0; i < MAX_VAL; i++)
